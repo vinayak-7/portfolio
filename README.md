@@ -1,3 +1,3 @@
 # portfolio
  portfolio website
- https://vinayak-7.github.io/portfolio.github.io/
+ https://vinayak-7.github.io/portfolio/
