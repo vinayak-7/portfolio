@@ -328,7 +328,7 @@ nav .fas{
     display: none;
 }
 
-@media only screen and (max-width: 1068px){
+@media only screen and (max-width: 600px){
     #header{
         background-image: url(images/background.png);
     }
