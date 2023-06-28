@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> personal portfolio</title>
+    <title> Vinayak's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0d6cc2bdee.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logo2.png" type="images/x-icon">
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
+                <img src="images/logo.png" class="logo" alt="logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Project</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
@@ -33,20 +34,24 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png">
+                    <img src="images/user1.png" alt="user">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
-                    <p>loreum ispumloreum ispumloreum ispumloreum ispumloreum ispumloreum ispumloreum ispumloreum ispumloreum ispumloreum ispumloreum ispumloreum ispum
-                        loreum ispumloreum ispumloreum ispumloreum ispum</p>
+                    <p>I am a self-assured, responsible, and skilled Computer Science Engineering student who is deeply passionate about competitive coding, web development, and photography. 
+                        My ambition is to continuously expand my knowledge and proficiency in these areas, while also aligning my skill set with the current needs of organizations. Meeting new individuals, engaging in meaningful conversations, and actively participating in community initiatives is something I thoroughly enjoy. I possess strong organizational skills and actively seek opportunities to collaborate with others in order to foster growth and development within these exceptional communities.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id = "skills">
                         <ul>
-                            <li><span>Web Development</span><br>MERN Stack</li>
-                            <li><span>Data Structure</span><br>C++</li>
+                            <li>Implimenting Your Skills is as Important as Learning new Skills<br></li>
+                            <li><span>Coding Languages</span><br>- Learned C as my First Language.
+                                <br>- I like to code more in C++ for coding Compitition as it is Compiled faster.</li>
+                            <li><span>Web Development</span><br>- Building responsive website front end using React, javascript, HTML , CSS
+                                <br>- Creating application backend in Node, Express & PHP
+                                <br>- DataBase Management using MongoDb and MySQL</li>
                             <!-- <li><span>UI/UX</span><br>Desgining</li> -->
                         </ul>
                     </div>
@@ -64,10 +69,10 @@
     <!-- -----------------portfolio-------------->
     <div id="portfolio">
         <div class="container">
-            <h1 class="subtitle">My Work</h1>
+            <h1 class="subtitle">My Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="images/work-1.png" alt="img">
                     <div class="layer">
                         <h3>Search Engine Result Page</h3>
                         <p>The SERP project creates a user-friendly search interface with features like input, display, pagination, snippets, 
@@ -89,18 +94,16 @@
                 <div class="work">
                     <img src="images/work-3.png">
                     <div class="layer">
-                        <h3>Portfolio</h3>
-                        <p>Project 
-                            A web developer showcasing captivating websites. Proficient in HTML, CSS, JavaScript, React, and Angular. Transforming ideas into engaging online experiences through visually stunning designs and seamless functionality. Explore my portfolio to see the power of my coding skills in action.
-                        </p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Tiffin Tales</h3>
+                        <p>Tiffin Tales is a platform connecting home-based cooks with customers who want delicious, homemade meals. It offers a user-friendly interface, cook profiles, menu customization, secure payments, and efficient delivery management. The platform promotes convenience, variety, authenticity, and healthier eating. It empowers home cooks and creates a community of food enthusiasts.</p>
+                            <a href="https://github.com/vinayak-7/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="https://github.com/vinayak-7/" class="btn" target="_blank">See more Project on GitHub</a>
         </div>
     </div>
-    <!-- Services -->
+    <!-- Services
     <div id="services">
         <div class="container">
             <h1 class = "sub-title"> My services</h1>
@@ -128,7 +131,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- --------------contact-------- -->
     <div id="contact">
         <div class="container">
