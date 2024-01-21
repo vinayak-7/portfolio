@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="https://kit.fontawesome.com/0d6cc2bdee.js" crossorigin="anonymous"></script>
     <link rel="icon" href="images/logo2.png" type="images/x-icon">
 </head>
+
 <body>
     <div id="header">
         <div class="container">
@@ -37,14 +39,13 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
-                    <p>I'm a self-assured, responsible CS student passionate about coding, web development, and photography. 
-                        I aim to expand my skills and align with organizations' needs. I enjoy meeting people, having meaningful 
-                        conversations, and engaging in community initiatives. Strong organizational skills drive me to collaborate for growth.</p>
+                    <p>I'm a self-assured, responsible CS student passionate about coding, web development, and photography. I aim to expand my skills and align with organizations' needs. I enjoy meeting people, having meaningful conversations, and engaging
+                        in community initiatives. Strong organizational skills drive me to collaborate for growth.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id = "skills">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li>Implimenting Your Skills is as Important as Learning new Skills<br></li>
                             <li><span>Coding Languages</span><br>- Learned C as my First Language.
@@ -75,9 +76,8 @@
                     <img src="images/work-1.png" alt="img">
                     <div class="layer">
                         <h3>Search Engine Result Page</h3>
-                        <p>The SERP project creates a user-friendly search interface with features like input, display, pagination, snippets, 
-                            filtering, and personalization. It uses HTML, CSS, JavaScript, server-side language, database, search engine. 
-                            Goals: user experience, accurate results, enhanced features, device optimization, and best practices.
+                        <p>The SERP project creates a user-friendly search interface with features like input, display, pagination, snippets, filtering, and personalization. It uses HTML, CSS, JavaScript, server-side language, database, search engine. Goals:
+                            user experience, accurate results, enhanced features, device optimization, and best practices.
                         </p><a href="https://github.com/vinayak-7/SERP" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -85,18 +85,18 @@
                     <img src="images/work-2.png">
                     <div class="layer">
                         <h3>E-Crime</h3>
-                        <p>The Crime Management System is a comprehensive platform for efficiently managing criminal activities. It includes 
-                            features for crime reporting, case management, data analysis, and investigation collaboration. Its goal is to streamline 
+                        <p>The Crime Management System is a comprehensive platform for efficiently managing criminal activities. It includes features for crime reporting, case management, data analysis, and investigation collaboration. Its goal is to streamline
                             law enforcement processes and enhance crime management.</p>
-                            <a href="https://github.com/vinayak-7/e-Crime" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/vinayak-7/e-Crime" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/work-3.png">
                     <div class="layer">
                         <h3>Tiffin Tales</h3>
-                        <p>Tiffin Tales is a platform connecting home-based cooks with customers who want delicious, homemade meals. It offers a user-friendly interface, cook profiles, menu customization, secure payments, and efficient delivery management. The platform promotes convenience, variety, authenticity, and healthier eating. It empowers home cooks and creates a community of food enthusiasts.</p>
-                            <a href="https://github.com/vinayak-7/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p>Tiffin Tales is a platform connecting home-based cooks with customers who want delicious, homemade meals. It offers a user-friendly interface, cook profiles, menu customization, secure payments, and efficient delivery management.
+                            The platform promotes convenience, variety, authenticity, and healthier eating. It empowers home cooks and creates a community of food enthusiasts.</p>
+                        <a href="https://github.com/vinayak-7/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -138,11 +138,11 @@
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname){
-            for(tablink of tablinks){
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link")
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab")
             }
             event.currentTarget.classList.add("active-link");
@@ -151,10 +151,12 @@
     </script>
     <script>
         var sidemenu = document.getElementById("sidemenu");
-        function openmenu(){
+
+        function openmenu() {
             sidemenu.style.right = "0";
         }
-        function closemenu(){
+
+        function closemenu() {
             sidemenu.style.right = "-200px";
         }
     </script>
@@ -163,19 +165,22 @@
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
 
-        
         form.addEventListener('submit', e => {
             e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-        </script>
+    </script>
 </body>
+
 </html>
